@@ -1,1 +1,108 @@
-.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b12">
+  <title>CYBER DETECTIVE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background-glow"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon">⌘</span>
+      CYBER<span>DETECTIVE</span>
+    </div>
+    <div class="status">
+      <span class="status-dot"></span> SYSTEM ONLINE
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <p class="eyebrow">YOUR DIGITAL INVESTIGATION BEGINS</p>
+
+      <h1>THINK LIKE A<br>
+        <span>DETECTIVE.</span>
+      </h1>
+
+      <p class="description">
+        Every click leaves a trace. Every mystery has a solution.
+        Can you uncover the truth?
+      </p>
+
+      <div class="terminal">
+        <div class="terminal-head">
+          <span>● LIVE SYSTEM</span>
+          <span>ENCRYPTED</span>
+        </div>
+        <div class="terminal-content">
+          <p>&gt; Initializing investigation...</p>
+          <p>&gt; Connecting to secure network...</p>
+          <p class="success">&gt; Detective access granted ✓</p>
+          <p class="cursor-line">&gt; Awaiting your command<span class="cursor">_</span></p>
+        </div>
+      </div>
+
+      <div class="player-card">
+        <div>
+          <p class="muted">DETECTIVE PROFILE</p>
+          <h3>ROOKIE DETECTIVE</h3>
+          <p class="level">LEVEL 01 · BEGINNER</p>
+        </div>
+        <div class="xp">
+          <strong id="xp">0 XP</strong>
+          <span>EXPERIENCE</span>
+        </div>
+      </div>
+
+      <button id="startBtn" class="start-btn">
+        START INVESTIGATION <span>→</span>
+      </button>
+
+      <p class="bottom-note">CASE FILES AWAIT · YOUR JOURNEY STARTS HERE</p>
+    </section>
+
+    <section id="caseScreen" class="case-screen hidden">
+      <div class="case-label">CLASSIFIED CASE FILE · 001</div>
+      <h2>THE PHISHING TRAP</h2>
+      <p>
+        A suspicious message has appeared on your screen.
+        A user reports receiving a bank security alert.
+      </p>
+
+      <div class="message-box">
+        <span class="danger">⚠ SUSPICIOUS MESSAGE</span>
+        <p>YOUR BANK ACCOUNT WILL BE BLOCKED!</p>
+        <p>Verify your account immediately using this link:</p>
+        <strong>secure-bank-verify.example.com</strong>
+      </div>
+
+      <p class="question">What should a detective do first?</p>
+
+      <button class="choice" data-answer="wrong">
+        A. Click the link immediately
+      </button>
+      <button class="choice" data-answer="correct">
+        B. Inspect the sender and link carefully
+      </button>
+      <button class="choice" data-answer="wrong">
+        C. Enter the banking password
+      </button>
+
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+      <button id="backBtn" class="back-btn">← BACK TO HOME</button>
+    </section>
+
+  </main>
+
+  <footer>CYBER DETECTIVE © 2026 · TRAIN YOUR DIGITAL INSTINCTS</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
